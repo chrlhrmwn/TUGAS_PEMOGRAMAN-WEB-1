@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📚 Sistem Data Mahasiswa</h1>
+
+    <div class="card">
+
+        <div class="input-group">
+            <label>NIM</label>
+            <input type="text" id="nim" placeholder="Masukkan NIM">
+        </div>
+
+        <div class="input-group">
+            <label>Nama Mahasiswa</label>
+            <input type="text" id="nama" placeholder="Masukkan Nama">
+        </div>
+
+        <div class="input-group">
+            <label>Jurusan</label>
+            <select id="jurusan">
+                <option value="">Pilih Jurusan</option>
+                <option>Sistem Informasi</option>
+                <option>Teknik Informatika</option>
+                <option>Manajemen</option>
+                <option>Akuntansi</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Fakultas</label>
+            <select id="fakultas">
+                <option value="">Pilih Fakultas</option>
+                <option>Teknik</option>
+                <option>Ekonomi</option>
+                <option>Hukum</option>
+            </select>
+        </div>
+
+        <div class="button-group">
+            <button class="btn tambah" onclick="tambahMahasiswa()">
+                Tambah Data
+            </button>
+
+            <button class="btn update" onclick="updateMahasiswa()">
+                Update Data
+            </button>
+        </div>
+
+    </div>
+
+    <h2>Daftar Mahasiswa</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>NIM</th>
+                <th>Nama</th>
+                <th>Jurusan</th>
+                <th>Fakultas</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+
+        <tbody id="tabelMahasiswa">
+
+        </tbody>
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
