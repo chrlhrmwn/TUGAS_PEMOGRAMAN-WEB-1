@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Modern</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="calculator">
+
+        <h1>🧮 Smart Calculator</h1>
+
+        <input type="number" id="angka1" placeholder="Masukkan angka pertama">
+
+        <input type="number" id="angka2" placeholder="Masukkan angka kedua">
+
+        <div class="buttons">
+            <button onclick="hitung('+')">+</button>
+            <button onclick="hitung('-')">−</button>
+            <button onclick="hitung('*')">×</button>
+            <button onclick="hitung('/')">÷</button>
+            <button onclick="hitung('%')">%</button>
+            <button onclick="resetKalkulator()">C</button>
+        </div>
+
+        <div class="hasil">
+            <h2 id="hasil">Hasil: 0</h2>
+        </div>
+
+        <div class="history">
+            <h3>Riwayat Perhitungan</h3>
+            <ul id="historyList"></ul>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="kalkulator_.js"></script>
+
+</body>
+</html>
